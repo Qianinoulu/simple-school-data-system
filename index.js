@@ -62,9 +62,9 @@ app.get('/', function(req, res) {
          name: req.body.name,
          address: req.body.address,
          class:req.body.class,
- });
+     });
      res.sendStatus(200);
-
+ });
      // post course
 app.post('/courses', function (req, res) {
      
@@ -74,9 +74,9 @@ app.post('/courses', function (req, res) {
            id: req.body.id,
            name: req.body.name,
            description:req.body.description,
- });
+    });
      res.sendStatus(200);
-
+});
  app.delete('/students/:id',function (req, res) {
         //content
  });
